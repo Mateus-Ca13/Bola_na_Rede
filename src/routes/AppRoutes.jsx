@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import MainLayout from '../layouts/MainLayout'
 import MainPage from '../pages/MainPage/MainPage'
 
-export default function AppRouter() {
+export default function AppRoutes() {
   return (
         <BrowserRouter>
       <Routes>
