@@ -2,3 +2,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+
+    /* ========================= Banner Components ========================= */
+
+    .signButton1 {
+        @apply rounded-md px-8 py-2 font-bold mt-2 mb-10 bg-white bg-opacity-80
+    }
+
+    .signButton2 {
+        @apply rounded-md px-10 py-3 font-bold mt-3 mb-4 bg-gradient-to-bl from-blue1 to-cyan text-white
+    }
+
+    .socialSpan {
+        @apply gap-4 text-blue2 bg-gray bg-opacity-40 py-2 px-4 rounded-md text-2xl inline-block shadow-md;
+
+        .icon {
+            @apply duration-500 transition
+        }
+
+        .icon:hover {
+            @apply opacity-50 duration-500 transition scale-105
+        }
+    }
+
+    .title {
+        @apply text-blue2 font-semibold text-xl
+    }
+
+    .subtitle {
+        @apply font-semibold text-blue2
+    }
+}
+
+@layer utilities {
+
+
+    .flexbox {
+        @apply flex items-center justify-center text-center
+    }
+
+    .columnbox {
+        @apply flex flex-col items-center justify-center text-center
+    }
+}

@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", 
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     screens: {
@@ -13,17 +13,28 @@ export default {
     },
     colors: {
       cyan: '#0070AD',
-      blue1: '#001A47',
-      blue2: '#01366B',
-      blue3: '#42C0FA',
+      blue1: '#8EC8FB',
+      blue2: '#001A47',
+      blue3: '#01366B',
+      blue4: '#42C0FA',
       gray: '#EAEAEA',
-      gradient1: 'linear-gradient(to top, #00285A, #0070AD, #FFFFFF)'
-
+      white: '#FFFFFF',
+      transparent: 'rgba(0, 0, 0, 0)'
     },
     fontFamily: {
-      instrumentSans: "Instrument Sans"
+      instrumentSans: "Instrument Sans, sans-serif"
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'logo-bg': 'url("./icon-bg.png")',
+        'banner-sm': 'url("./banner-sm2.png")',
+        'card-image1': 'url("./card-image1.png")',
+        'card-image2': 'url("./card-image2.png")',
+        'card-image3': 'url("./card-image3.png")',
+        'card-image4': 'url("./card-image4.png")',
+        'fadeBlue2': 'url("./fade.png")'
+      }
+    },
   },
   plugins: [],
 }
