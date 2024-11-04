@@ -27,13 +27,13 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'logo-bg': 'url("/icon-bg.png")',
-        'banner-sm': 'url("/banner-sm2.png")',
-        'card-image1': 'url("/card-image1.png")',
-        'card-image2': 'url("/card-image2.png")',
-        'card-image3': 'url("/card-image3.png")',
-        'card-image4': 'url("/card-image4.png")',
-        'fadeBlue2': 'url("/fade.png")'
+        'logo-bg': 'url("/icon-bg.webp")',
+        'banner-sm': 'url("/banner-sm2.webp")',
+        'card-image1': 'url("/card-image1.webp")',
+        'card-image2': 'url("/card-image2.webp")',
+        'card-image3': 'url("/card-image3.webp")',
+        'card-image4': 'url("/card-image4.webp")',
+        'fadeBlue2': 'url("/fade.webp")'
       }
     },
   },

@@ -19,7 +19,7 @@ export default function Header() {
       </AnimatePresence>
 
       <header className='sticky top-0 z-10 bg-white shadow-md flex justify-between items-center py-1 px-2'>
-        <Link to={'/'}><img className='max-w-12' src='./icon.png' alt='Logotipo do Bola na Rede.' /></Link>
+        <Link to={'/'}><img className='max-w-12' src='./icon.webp' alt='Logotipo do Bola na Rede.' /></Link>
         <motion.button initial={false} whileTap={{ scale: [1.0, 0.9, 1.0], transition: { duration: 0.1 } }} onClick={() => { setState(true) }}>
           <RiMenu3Line className='size-6 mx-1' />
         </motion.button>

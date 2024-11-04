@@ -5,7 +5,7 @@ import { BsFacebook, BsInstagram, BsLinkedin, BsTiktok } from 'react-icons/bs'
 export default function Banner() {
   return (
     <>
-      <section className='bg-banner-sm to-white from-cyan py-16 bg-cover bg-bottom columnbox px-8'>
+      <section className='bg-banner-sm py-16 bg-cover bg-bottom columnbox px-8'>
         <div>
           <h1 className='text-white font-semibold text-3xl'>CONECTE-SE E JOGUE.</h1>
           <p className='text-white py-4'>O <span className='text-blue1'>Bola na Rede</span> veio para facilitar a busca por partidas em sua região. Faça sua conta hoje mesmo e ache seu próximo jogo!</p>
