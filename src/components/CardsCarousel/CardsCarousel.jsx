@@ -21,6 +21,7 @@ export default function CardsCarousel() {
     autoplay={{delay: 4000, disableOnInteraction: false,}}
     slidesPerView={1}
     loop={true}
+    className='z-0'
     >
       {textData.map((item)=>(
         <SwiperSlide key={item.id}>

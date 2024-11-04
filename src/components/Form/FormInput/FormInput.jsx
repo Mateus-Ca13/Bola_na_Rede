@@ -7,7 +7,7 @@ export default function FormInput({label, type, placeholder}) {
         className='font-semibold'>{label}</label>
         
         <input id={label} type={type} placeholder={placeholder}
-        className='bg-gray rounded-md p-1 w-full px-2'></input>
+        className='bg-gray1 rounded-md p-1 w-full px-2'></input>
     </div>
   )
 }
