@@ -35,6 +35,18 @@
         @apply font-semibold text-blue2
     }
     
+    .menuTransition {
+        @apply delay-300
+    }
+
+    /*=============== LoginPage styles ===============*/
+
+    .active {
+        @apply text-white duration-300 font-semibold
+    }
+    .disabled {
+        @apply text-gray2 duration-300 font-semibold
+    }
 }
 
 @layer utilities {

@@ -18,7 +18,7 @@ export default {
       blue3: '#01366B',
       blue4: '#42C0FA',
       gray1: '#EAEAEA',
-      gray2: '#C1C1C1', 
+      gray2: '#A1A1A1', 
       white: '#FFFFFF',
       transparent: 'rgba(0, 0, 0, 0)'
     },

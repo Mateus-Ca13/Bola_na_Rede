@@ -8,6 +8,7 @@ import FormSection from '../../components/FormSection/FormSection'
 import WarningSection from '../../components/WarningSection/WarningSection'
 
 export default function MainPage() {
+
   return (
     <main className='font-instrumentSans'>
       <Banner />
