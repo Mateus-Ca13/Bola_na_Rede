@@ -6,3 +6,9 @@ Blibliotecas usadas:
 - TailwindCSS
 - Framer Motion
 - Swiper
+
+- Bcrypt
+- Express
+
+
+

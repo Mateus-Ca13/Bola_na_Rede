@@ -20,6 +20,7 @@ export default {
       gray1: '#EAEAEA',
       gray2: '#A1A1A1', 
       white: '#FFFFFF',
+      alert: '#AA1111',
       transparent: 'rgba(0, 0, 0, 0)'
     },
     fontFamily: {
@@ -28,12 +29,13 @@ export default {
     extend: {
       backgroundImage: {
         'logo-bg': 'url("/icon-bg.webp")',
-        'banner-sm': 'url("/banner-sm2.webp")',
+        'banner-sm': 'url("/banner-sm.png")',
         'card-image1': 'url("/card-image1.webp")',
         'card-image2': 'url("/card-image2.webp")',
         'card-image3': 'url("/card-image3.webp")',
         'card-image4': 'url("/card-image4.webp")',
-        'fadeBlue2': 'url("/fade.webp")'
+        'fadeBlue2': 'url("/fade.webp")',
+        'fadeFull': 'url("/fade-bg.png")'
       }
     },
   },

@@ -1,23 +1,41 @@
-import React from 'react'
-import Banner from '../../components/Banner/Banner'
-import CarouselSection from '../../components/CarouselSection/CarouselSection'
-import CardsSection from '../../components/CardsSection/CardsSection'
-import AdvantagesSection from '../../components/AdvantagesSection/AdvantagesSection'
-import SignSection from '../../components/SignSection/SignSection'
-import FormSection from '../../components/FormSection/FormSection'
-import WarningSection from '../../components/WarningSection/WarningSection'
+import React, { lazy, useEffect, useState } from 'react'
+const MatchesPage = lazy(()=> import('../MatchesPage/MatchesPage' )) 
+const LeaguesPage = lazy(()=> import('../LeaguesPage/LeaguesPage')) 
+const UserDataPage = lazy(()=> import('../UserDataPage/UserDataPage')) 
+const AccountPage = lazy(()=> import('../AccountPage/AccountPage')) 
 
-export default function MainPage() {
+export default function MainPage({ activeSection }) {
+  const [actualPage, setActualPage] = useState('MATCHES')
+
+  useEffect(()=>{
+    switch (activeSection) {
+      case 'MATCHES':
+          setActualPage(<MatchesPage/>)
+
+        break;
+        case 'LEAGUES':
+          setActualPage(<LeaguesPage/>)
+        
+        break
+        case 'USERDATA':
+          setActualPage(<UserDataPage/>)
+
+        break
+        case 'ACCOUNT':
+          setActualPage(<AccountPage/>)
+     
+        break
+      default:
+        setActualPage(<MatchesPage/>)
+        break;
+    }
+
+  }, [activeSection])
 
   return (
-    <main className='font-instrumentSans'>
-      <Banner />
-      <CarouselSection />
-      <CardsSection />
-      <AdvantagesSection />
-      <SignSection />
-      <FormSection />
-      <WarningSection />
+    <main className='pb-28 h-full min-h-screen pt-3 rounded-lg mx-2 bg-white'>
+    {actualPage}
     </main>
+    
   )
 }
