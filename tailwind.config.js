@@ -20,6 +20,7 @@ export default {
       gray1: '#EAEAEA',
       gray2: '#A1A1A1', 
       white: '#FFFFFF',
+      black: '#000000',
       alert: '#AA1111',
       transparent: 'rgba(0, 0, 0, 0)'
     },

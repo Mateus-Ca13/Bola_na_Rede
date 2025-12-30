@@ -12,10 +12,9 @@ export default function Banner() {
           <p className='text-white py-4'>O <span className='text-blue1'>Bola na Rede</span> veio para facilitar a busca por partidas em sua região. Faça sua conta hoje mesmo e ache seu próximo jogo!</p>
           <SignLink pattern={'signLink1'}> ENTRAR EM CAMPO</SignLink>
           
-          <Link to={'/dashboard'} className='bg-white px-3 py-1 rounded-md'>Sessão usuário</Link>
         </div>
         <div>
-          <p className='text-white py-2 px-10 text-xs'>Deseja conhecer um pouco mais sobre a nossa história? Visite nossas redes sociais.</p>
+          <p className='text-white py-2 text-xs'>Deseja conhecer um pouco mais sobre a nossa história? Visite nossas redes sociais.</p>
           <div className='inline-block mb-8'>
             <span className='flexbox socialSpan'>
               <BsInstagram className='icon' /><BsLinkedin className='icon' /><BsFacebook className='icon' /><BsTiktok className='icon' />

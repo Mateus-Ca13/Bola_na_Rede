@@ -19,7 +19,7 @@
         @apply gap-4 text-blue2 bg-white bg-opacity-40 py-2 px-4 rounded-md text-2xl inline-block shadow-md;
 
         .icon {
-            @apply duration-500 transition
+            @apply duration-500 transition text-3xl
         }
 
         .icon:hover {
@@ -59,17 +59,6 @@
 
      /*=============== FilterMenu styles ===============*/
 
-     .filterBar{
-        @apply bg-blue1 rounded-lg h-2;
-        -webkit-appearance: none;
-     }
-
-     .filterBar::-webkit-slider-thumb{
-        @apply rounded-xl bg-cyan;
-        height: 15px;
-        width: 25px;
-        appearance: none;
-     }
 
      /*=============== General styles ===============*/
 

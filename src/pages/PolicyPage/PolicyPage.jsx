@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function PolicyPage() {
     return (
-        <main className='text-center p-6 text-sm text-gray1 bg-gradient-to-b to-blue2 from-cyan'>
+        <main className='p-6 text-sm text-gray1 bg-gradient-to-b to-blue2 from-cyan'>
             <h1 className='title text-blue1 text-2xl'>POLÍTICA DE PRIVACIDADE</h1>
             <div className='my-3 columnbox gap-3'>
                 <h2 className='title text-white'>1. Introdução</h2>
@@ -13,9 +13,9 @@ export default function PolicyPage() {
                 <h2 className='title text-white'>2. Dados Pessoais Coletados</h2>
                 <p>Coletamos informações pessoais diretamente fornecidas pelos usuários e dados gerados durante a utilização da plataforma. Os tipos de dados que podem ser coletados incluem, mas não se limitam a:</p>
                 <ul className='mx-4 list-disc'>
-                    <li>Informações de Identificação Pessoal (IIP): Nome completo, nome de usuário (username), e-mail, número de telefone, idade, gênero.</li>
+                    <li>Informações de Identificação Pessoal (IIP): Nome completo, nome de usuário (username), e-mail, idade, gênero.</li>
                     <li>Informações de Geolocalização: Localização aproximada (obtida com base em geolocalização) para sugerir partidas próximas ao usuário.</li>
-                    <li>Dados de Autenticação: Senhas (armazenadas em formato criptografado/hashes), métodos de verificação via SMS, e token de autenticação para garantir a segurança de acesso.</li>
+                    <li>Dados de Autenticação: Senhas (armazenadas em formato criptografado/hashes), métodos de verificação via email, e token de autenticação para garantir a segurança de acesso.</li>
                     <li>Dados Comportamentais: Preferências de estilo de jogo, partidas realizadas, interações com outros usuários e uso geral da aplicação para fins de análise e melhoria da plataforma.</li>
                 </ul>
                 <p>Além disso, a plataforma pode coletar dados técnicos, como o endereço IP, tipo de dispositivo, versão do sistema operacional e o navegador utilizado, para garantir a compatibilidade e a segurança da aplicação.</p>
@@ -69,7 +69,7 @@ export default function PolicyPage() {
                     <li>Portabilidade: Sob certas circunstâncias, você tem o direito de receber seus dados pessoais em um formato estruturado e de uso comum.</li>
                     <li>Restrição de Processamento: Você pode solicitar a limitação do uso dos seus dados, especialmente em casos onde questiona a legalidade do tratamento.</li>
                 </ul>
-                <p>Para exercer qualquer um desses direitos, entre em contato conosco através do e-mail: <strong>bolanarede@gmail.com</strong>. Nossa equipe irá avaliar sua solicitação e responder dentro dos prazos estipulados pela legislação aplicável.</p>
+                <p>Para exercer qualquer um desses direitos, entre em contato conosco através do e-mail: <strong>suporte.bolanarede@gmail.com</strong>. Nossa equipe irá avaliar sua solicitação e responder dentro dos prazos estipulados pela legislação aplicável.</p>
             </div>
             <div className='my-3 columnbox gap-3'>
                 <h2 className='title text-white'>9. Transferências Internacionais de Dados</h2>

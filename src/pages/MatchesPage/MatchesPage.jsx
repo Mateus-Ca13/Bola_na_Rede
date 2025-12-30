@@ -1,20 +1,20 @@
-import React, { useEffect, useReducer, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import FilterMenu from '../../components/FilterMenu/FilterMenu'
 import { Link } from 'react-router-dom'
 import { BiPlus } from 'react-icons/bi'
-import matchesData from '../../json/matchData.json'
 import CardsList from '../../components/CardsList/CardsList'
 import SkeletonLoader from '../../components/SkeletonLoader/SkeletonLoader'
+import { dashboardContext } from '../../contexts/dashBoardContext'
 
 export default function MatchesPage() {
-  const [matchesList, setMatchesList] = useState(matchesData.data)
-  const [searchFilter, setSearchFilter] = useState('')
+  const { matchesList, setMatchesList } = useContext(dashboardContext)
+  const { searchFilter, setSearchFilter } = useContext(dashboardContext)
   const [contentIsLoading, setContentIsLoading] = useState(true)
 
 
   useEffect(() => {
-    setTimeout(() => { setContentIsLoading(false) }, 4000)
+    setTimeout(() => { setContentIsLoading(false) }, 1000)
   }, [])
 
   return (
@@ -23,7 +23,7 @@ export default function MatchesPage() {
         <SearchBar filterSetter={setSearchFilter} />
         <FilterMenu/>
       </section>
-      <Link to={'/'}>
+      <Link to={'/criar-partida'}>
         <span className='fixed bottom-20 rounded-lg right-4 bg-cyan w-12 h-12 flexbox text-white'>
           <BiPlus className='text-4xl' />
         </span>

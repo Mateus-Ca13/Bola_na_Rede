@@ -12,7 +12,7 @@ export default function LoginForm() {
       loginModeButton.current.disabled = true;
       registerModeButton.current.disabled = true;
       setTimeout(()=>{
-        loginModeButton.current.disabled = false;
+      loginModeButton.current.disabled = false;
       registerModeButton.current.disabled = false;
       }, 300)
   }

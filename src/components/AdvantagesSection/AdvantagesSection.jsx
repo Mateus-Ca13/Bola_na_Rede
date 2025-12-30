@@ -1,10 +1,12 @@
 import React from 'react'
+import { FiMapPin } from 'react-icons/fi';
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
+import { SlOrganization } from 'react-icons/sl';
 
 export default function AdvantagesSection() {
     const advantageData = [
-        { id: 1, icon: <IoShieldCheckmarkOutline className='text-5xl' />, text: "Facilidade na organização" },
-        { id: 2, icon: <IoShieldCheckmarkOutline className='text-5xl' />, text: "Utilize de onde quiser" },
+        { id: 1, icon: <SlOrganization className='text-5xl' />, text: "Facilidade na organização" },
+        { id: 2, icon: <FiMapPin className='text-5xl' />, text: "Utilize de onde quiser" },
         { id: 3, icon: <IoShieldCheckmarkOutline className='text-5xl' />, text: "Jogue com segurança" },
     ]
     return (

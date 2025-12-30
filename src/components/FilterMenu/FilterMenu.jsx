@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { FaFilter } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
 import SelectionFilterBar from './SelectionFilterBar/SelectionFilterBar'
+import { dashboardContext } from '../../contexts/dashBoardContext'
 
 export default function FilterMenu() {
   const [openMenu, setOpenMenu] = useState(false)
+  const { ageFilter, setAgeFilter, gamemodeFilter, setGamemodeFilter, gamestyleFilter, setGamestyleFilter, priceFilter, setPriceFilter } = useContext(dashboardContext);
 
   const handleOpenMenu = () => {
     openMenu ? setOpenMenu(false) : setOpenMenu(true)
+    console.log(ageFilter, gamemodeFilter, gamestyleFilter, priceFilter)
   }
 
-  const [ageFilter, setAgeFilter] = useState('NDA')
-  const [gamemodeFilter, setGamemodeFilter] = useState('NDA')
-  const [gamestyleFilter, setGamestyleFilter] = useState('NDA')
-  const [priceFilter, setPriceFilter] = useState(0)
+  
   return (
     <section>
       <button className={`flexbox gap-2 border-2 p-2 rounded-md font-semibold text-sm ${openMenu ? 'bg-cyan text-white' : 'bg-transparent text-cyan'}`}
@@ -27,25 +27,25 @@ export default function FilterMenu() {
          filterSetter={setAgeFilter}
          filterState={ageFilter}
          name={'Faixa Etária'} 
-         FilterBar values={['NDA', '18-25', '25-35', '35+']} />
+         FilterBar values={[{ value: "", name: "NDA" }, { value: "18-25", name: "18-25" }, { value: "25-35", name: "25-35" }, { value: "35+", name: "35+" }]} />
 
         <SelectionFilterBar
          filterSetter={setGamemodeFilter}
          filterState={gamemodeFilter}
          name={'Modalidade'} 
-        FilterBar values={['NDA', 'Futsal', 'Society', 'Futebol']} />
+        FilterBar values={[{ value: "", name: "NDA" }, { value: "futsal", name: "Futsal" }, { value: "society", name: "Society (Fut7)" }, { value: "soccer", name: "Futebol" }]} />
 
         <SelectionFilterBar
           filterSetter={setGamestyleFilter}
           filterState={gamestyleFilter}
         name={'Estilo de jogo'} 
-        values={['NDA', 'Descontraído', 'Amador', 'Profissional']} />
+        values={[{ value: "", name: "NDA" }, { value: "relaxed", name: "Descontraído" }, { value: "casual", name: "Casual" }, { value: "seasoned", name: "Experiente" }, { value: "competitive", name: "Competitivo" }]} />
 
         <SelectionFilterBar
           filterSetter={setPriceFilter}
           filterState={priceFilter}
         name={'Preço'} 
-        values={['NDA', 'R$100', 'R$150', 'R$200', 'R$250']} />
+        values={[{ value: "", name: "NDA" }, { value: "100", name: "R$100" }, { value: "150", name: "R$150" }, { value: "200", name: "R$200" }, { value: "250", name: "R$250" }]} />
 
 
       </motion.section>}

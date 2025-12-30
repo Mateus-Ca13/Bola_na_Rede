@@ -25,7 +25,7 @@ export default function CardsCarousel() {
     >
       {textData.map((item)=>(
         <SwiperSlide key={item.id}>
-          <div className='font-medium bg-gradient-to-r from-blue3 to-blue4 text-white columnbox gap-3 py-5 mx-6 rounded-md shadow-md'>
+          <div className='font-medium bg-gradient-to-r from-blue3 to-blue4 text-white columnbox gap-3 py-10 mx-6 rounded-md shadow-md'>
           {item.icon}
           <p className='border-b-blue4 px-3 border-b-2'>{item.text}</p>
           </div>
